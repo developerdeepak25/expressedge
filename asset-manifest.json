@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/developerdeepak25/expressedge/static/css/main.a9a79750.css",
+    "main.js": "/developerdeepak25/expressedge/static/js/main.29c34988.js",
+    "static/js/787.28cb0dcd.chunk.js": "/developerdeepak25/expressedge/static/js/787.28cb0dcd.chunk.js",
+    "static/media/transition-img.png": "/developerdeepak25/expressedge/static/media/transition-img.6f62e26e7c8cc80c84b2.png",
+    "static/media/sticky-img.png": "/developerdeepak25/expressedge/static/media/sticky-img.8311244febc5b209dcac.png",
+    "static/media/grp-img.png": "/developerdeepak25/expressedge/static/media/grp-img.f3e37001efa25abc5396.png",
+    "static/media/service-img1.png": "/developerdeepak25/expressedge/static/media/service-img1.0e1c1373188f864981a0.png",
+    "static/media/hand-shake.png": "/developerdeepak25/expressedge/static/media/hand-shake.7ab2b4e8a80f83b40be5.png",
+    "static/media/service-img2.png": "/developerdeepak25/expressedge/static/media/service-img2.b718bd9e8bc04c50bc26.png",
+    "static/media/service-img3.png": "/developerdeepak25/expressedge/static/media/service-img3.c196801f2e81c0c4cfe2.png",
+    "static/media/ravi.png": "/developerdeepak25/expressedge/static/media/ravi.0d6579e50d45cb674244.png",
+    "static/media/sohan.png": "/developerdeepak25/expressedge/static/media/sohan.9ff5795af49f82eaaac7.png",
+    "index.html": "/developerdeepak25/expressedge/index.html",
+    "main.a9a79750.css.map": "/developerdeepak25/expressedge/static/css/main.a9a79750.css.map",
+    "main.29c34988.js.map": "/developerdeepak25/expressedge/static/js/main.29c34988.js.map",
+    "787.28cb0dcd.chunk.js.map": "/developerdeepak25/expressedge/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9a79750.css",
+    "static/js/main.29c34988.js"
+  ]
+}
