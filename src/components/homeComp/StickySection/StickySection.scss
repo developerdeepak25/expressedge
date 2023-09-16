@@ -1,0 +1,44 @@
+@import "styles//variables.scss";
+
+.sticky-section {
+  display: grid;
+  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 5em;
+  margin-top: 15em;
+  column-gap: 2em;
+  place-content: center;
+
+  .sticky-container{
+    height: max(100vh,700px);
+    position: sticky;
+    top: 0;
+    .sticky-content{
+        height: 100%;
+        display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+        .sticky-img{
+          height: min(76% ,700px);
+          aspect-ratio: .68/1;
+          overflow: hidden;
+          border-radius: 3rem;
+          display: flex;
+          justify-content:center;
+        }
+        img{
+            display: block;
+            height: 100%;
+        }; 
+    }
+  }
+
+  .non-sticky-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    // padding-left: 5em;
+    
+  }
+}

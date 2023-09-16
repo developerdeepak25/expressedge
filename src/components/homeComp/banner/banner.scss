@@ -1,0 +1,47 @@
+@import "styles/variables.scss";
+
+// banner (home big heading) css
+
+.banner {
+  margin-top: 20em;
+  position: relative;
+  display: grid;
+  row-gap: 3em;
+  z-index: 1;
+  .banner-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+
+    .row-col {
+      display: flex;
+      // flex-wrap: nowrap;
+      flex-direction: row;
+
+      span {
+        // font-size: 9.4vw;
+        font-size: 13.5rem;
+        font-weight: 600;
+        position: relative;
+        display: block;
+        span.title-letter {
+          display: inline-block;
+          line-height: 17rem;
+        }
+      }
+      .row-message {
+        // width: 30%;
+        text-align: right;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        justify-self: flex-end;
+      }
+    }
+    .row-col:has(.row-message) {
+      width: 20%;
+    }
+  }
+}

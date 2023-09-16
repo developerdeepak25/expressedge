@@ -1,0 +1,46 @@
+@import "styles/variables.scss";
+
+.story-container {
+  margin-top: 20em;
+  .story-content {
+    margin: 0 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 3rem;
+    .grp-img-wrapper {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      margin-left: 2rem;
+
+      .grp-img {
+        // overflow: hidden;
+        border-radius: 1rem;
+        width: 100%;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.1);
+        height: auto;
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          border: 1px solid $prime-color;
+          width: 100%;
+          height: 100%;
+          rotate: -6deg;
+          position: absolute;
+          z-index: -1;
+          border-radius: 1rem;
+        }
+      }
+    }
+    .story {
+      grid-column-start: 6;
+      grid-column-end: 13;
+      display: grid;
+      row-gap: 4em;
+      h1 {
+        line-height: 6.4rem;
+      }
+    }
+  }
+}

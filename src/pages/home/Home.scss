@@ -1,0 +1,16 @@
+// transition image css
+
+.transition-img {
+  width: 100%;
+  margin-top: 12em;
+  // overflow: hidden;
+  // aspect-ratio: 1/0.6;
+  position: relative;
+
+  img {
+    // position: absolute;
+    width: 100%;
+    display: block;
+    // background-position: center;
+  }
+}

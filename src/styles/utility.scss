@@ -1,0 +1,50 @@
+// css utility  classes
+@import "styles/variables.scss";
+
+.container-wrapper {
+  width: 100%;
+  display: block !important;
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-right {
+  display: flex;
+  justify-content: flex-end;
+  // align-items: center;
+}
+.f-y-center {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+}
+
+.g-center {
+  display: grid;
+  place-content: center;
+}
+
+.heading {
+  font-size: 5.4rem;
+  font-weight: 500;
+  opacity: 0.8;
+  // line-height: 6.5rem;
+}
+.form-heading{
+  font-size: 3.6rem;
+  font-weight: 500;
+  opacity: 0.8;
+
+}
+
+.para {
+  display: grid;
+  row-gap: 3em;
+}

@@ -1,0 +1,102 @@
+@import "styles/variables.scss";
+
+.testi-section {
+  margin-top: 20em;
+  width: 100%;
+  .testi-content {
+    width: 100%;
+
+    .testi-heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        text-align: center;
+      }
+    }
+
+    .card-slider-wrapper {
+      margin-top: 10rem;
+      width: 100%;
+      .card-slider {
+        display: flex;
+        align-items: center;
+        .slider {
+          width: 1.5rem;
+          cursor: pointer;
+         
+          img {
+            width: 100%;
+          }
+        }
+        .slider.right-slider {
+          transform: rotate(180deg);
+        }
+        .testimonial-container{
+
+            overflow: hidden;
+            width: calc(100% - 3rem);
+       
+        .testimonial-wrapper {
+            // width: calc(100% - 3rem);
+            height: fit-content;
+            display: flex;
+            // justify-content: center;
+            // transition: .5s;
+
+
+          .testimonial-card {
+            width: 48rem;
+            // height: 50rem;
+            background: #f7f5ff;
+            border-radius: 15px;
+            padding: 5rem 3.5rem;
+            margin: 0 calc(calc(100% - 48rem*2)/4);
+            flex-shrink: 0;
+
+            .quote {
+              font-size: 12.5rem;
+              color: $prime-color;
+              line-height: 80%;
+            }
+            .para p {
+              color: #4b4b4b;
+            }
+            .partner-desc {
+              display: flex;
+              align-items: center;
+              gap: 2rem;
+              margin-top: 4em;
+              .partner-img {
+                width: 7.5rem;
+                height: 7.5rem;
+                border-radius: 100%;
+                overflow: hidden;
+                display: flex;
+                align-items: start;
+                img {
+                  width: 100%;
+                }
+              }
+              .partner-detail {
+                display: grid;
+                row-gap: 1rem;
+
+                .patner-name {
+                  font-size: 1.6rem;
+                  font-weight: 600;
+                }
+                .patner-location {
+                  font-weight: 600;
+                  font-size: 1.6rem;
+                  // opacity: .8;
+                  color: #4b4b4b;
+                }
+              }
+            }
+          }
+        } }
+      }
+    }
+  }
+}

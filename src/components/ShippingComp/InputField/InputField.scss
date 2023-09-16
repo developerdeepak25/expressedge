@@ -1,0 +1,42 @@
+@import "styles/variables.scss";
+
+.input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  position: relative;
+  label {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    // transform: translateY(10px);
+    font-weight: 500;
+    position: absolute;
+    transition: .2s;
+    transition-timing-function: cubic-bezier(0.43, 0.03, 0, 1.02);
+    display: flex;
+    gap: .5rem;
+;
+    .required{
+        color: $prime-color;
+
+    }
+    
+  }
+  input {
+    display: block;
+    // flex: 1 0 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $l-black;
+    padding: 1.2rem 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $l-black;
+    text-transform: capitalize;
+  }
+//   input:focus ~ label,
+//   input:not(:placeholder-shown) ~ label {
+//     transform: translateY(-10px);
+//   }
+}

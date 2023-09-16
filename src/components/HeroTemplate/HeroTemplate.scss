@@ -1,0 +1,32 @@
+@import 'styles/variables.scss';
+
+
+.hero-container{
+    width: 100%;
+    margin-top: 28em;
+    .hero-content{
+        // display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        row-gap: 4em;
+        
+        .hero-heading{
+            font-size: 14rem;
+            color: $prime-color;
+            opacity: .8;
+            font-weight: 500;
+            grid-column-start: 1;
+            grid-column-end: 13;
+            // overflow: auto;
+            // line-height: 18rem  ;
+        }
+        .hero-para{
+            grid-column-start: 1;
+            grid-column-end: 10;
+
+        }
+    }
+}
+
+
+

@@ -1,0 +1,28 @@
+@import "styles/variables.scss";
+
+.feature-section {
+  height: 100vh;
+      height: max(100vh,700px);
+
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .feature-list{
+      display: grid;
+      flex-direction: column;
+      row-gap: 2em;
+
+
+
+      .feature-service{
+        display: flex;
+        gap: 3em;
+        align-items: center;
+          // 
+      }
+    }
+  }
+}

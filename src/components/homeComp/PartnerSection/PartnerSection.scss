@@ -1,0 +1,37 @@
+@import "styles/variables.scss";
+
+.partner-section {
+  width: 100%;
+  margin-top: 20rem;
+  display: grid;
+
+  .partner-container {
+    display: flex;
+    gap: 9rem;
+    
+
+    .deco-line {
+        height: 100%;
+        width: .4rem;
+        display: block;
+        background: $prime-color;
+        border-radius: 2rem;
+        position: relative;
+      //   left: 0;
+      }
+    .partner-content {
+      display: flex;
+      //   row-gap: 3em;
+      flex-direction: column;
+      gap: 3em;
+      h1 {
+        color: $prime-color;
+        text-transform: uppercase;
+      }
+    }
+    .partner-img {
+      height:  100%;
+      width: 45rem;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import "styles/variables.scss";
+
+body{
+    background-color: $bg-color;
+}
+/* Hide default scrollbar */
+body::-webkit-scrollbar {
+  width: 0.7rem; /* Width of the thumb */
+  background-color: $bg-color;
+}
+body {
+  // overflow: scroll; /* or overflow: auto; */
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem; /* Rounded thumb */
+  // transition: opacity 1s;
+  background-clip: padding-box;
+  border-right: .1rem solid transparent;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+p{
+  font-size: 2rem;
+  word-spacing: .5rem;
+  line-height: 2.5rem;
+  font-weight: 600 ;
+  color: $l-black;
+  
+
+}
+button{
+    background-color: transparent;
+}
+span{
+  display: inline-block;
+}
+span.violet-span, .violet-span span{
+  color: $prime-color;
+  font-size: inherit;
+  // text-transform: capitalize;
+}
+

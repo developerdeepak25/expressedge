@@ -1,0 +1,43 @@
+.service-div {
+      //   display: grid;
+      //   grid-template-columns: repeat(12, 1fr);
+      //   gap: 2rem;
+      display: flex;
+      // flex-shrink: 0;
+      // flex-grow: 1;
+      align-items: center;
+      gap: 10em;
+
+      .service-img {
+        // grid-column-start: 1;
+        // grid-column-end: 5;
+        overflow: hidden;
+        display: flex;
+        height: 50rem;
+        width: 38rem;
+        flex-shrink: 0;
+        // order: 2;
+        border-radius: 1rem;
+        img {
+          border-radius: 1rem;
+          display: block;
+          width: 100%;
+        }
+      }
+      .service-img.order-2{
+        order: 2
+      }
+      .service-description{
+        display: grid;
+        row-gap: 3rem;
+        .service-list{
+            display: grid;
+            row-gap: 2rem;
+
+            .service-item{
+                display: flex;
+                gap:    3rem;
+            }
+        }
+      }
+    }

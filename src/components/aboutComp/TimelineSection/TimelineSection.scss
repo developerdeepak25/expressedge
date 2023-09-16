@@ -1,0 +1,52 @@
+@import "styles/variables.scss";
+
+.timeline-container {
+  width: 100%;
+  margin-top: 20rem;
+
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // width: 100%;
+    .timeline-heading {
+      h1 {
+        margin: 0 32rem;
+
+        text-align: center;
+      }
+    }
+    .timeline {
+      width: 100%;
+      margin-top: 10em;
+
+      .tl-dot {
+        border-color: $prime-color;
+        margin: 0;
+      }
+      .tl-connector {
+        background-color: $prime-color;
+      }
+
+      .tl-content-box {
+        background-color: #f7f5ff;
+        text-align: left;
+        padding: 35px 45px;
+        border-radius: 1rem;
+        display: grid;
+        row-gap: 1em;
+        font-family: "Playfair Display", serif !important;
+        font-weight: 600;
+        margin: 2rem 5rem;
+        .tl-box-h {
+          font-size: 2.8rem;
+          color: $prime-color;
+        }
+        .tl-box-p {
+          color: #4c4c4c;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

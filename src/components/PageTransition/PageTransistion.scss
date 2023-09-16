@@ -1,0 +1,13 @@
+@import 'styles/variables.scss';
+
+.slide{
+    width: 100vw;
+
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #8a6feb;
+    z-index: 11010100;
+    // transform-origin: bottom;
+}

@@ -1,0 +1,11 @@
+@import "styles/variables.scss";
+
+.service-section {
+  margin-top: 20em;
+  width: 100%;
+  .service-content {
+    display: grid;
+    row-gap: 15rem;
+    
+  }
+}
