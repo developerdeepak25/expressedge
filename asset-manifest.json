@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/expressedge/static/css/main.a9a79750.css",
-    "main.js": "/expressedge/static/js/main.02c10bd9.js",
+    "main.js": "/expressedge/static/js/main.62906e3b.js",
     "static/js/787.28cb0dcd.chunk.js": "/expressedge/static/js/787.28cb0dcd.chunk.js",
     "static/media/transition-img.png": "/expressedge/static/media/transition-img.6f62e26e7c8cc80c84b2.png",
     "static/media/sticky-img.png": "/expressedge/static/media/sticky-img.8311244febc5b209dcac.png",
@@ -14,11 +14,11 @@
     "static/media/sohan.png": "/expressedge/static/media/sohan.9ff5795af49f82eaaac7.png",
     "index.html": "/expressedge/index.html",
     "main.a9a79750.css.map": "/expressedge/static/css/main.a9a79750.css.map",
-    "main.02c10bd9.js.map": "/expressedge/static/js/main.02c10bd9.js.map",
+    "main.62906e3b.js.map": "/expressedge/static/js/main.62906e3b.js.map",
     "787.28cb0dcd.chunk.js.map": "/expressedge/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a9a79750.css",
-    "static/js/main.02c10bd9.js"
+    "static/js/main.62906e3b.js"
   ]
 }
