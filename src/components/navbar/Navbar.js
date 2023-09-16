@@ -73,13 +73,13 @@ const Navbar = ({ hiddenNav, ease }) => {
                     <NavLink to="/">home</NavLink>
                   </li>
                   <li>
-                    <NavLink to="about">about</NavLink>
+                    <NavLink to="/about">about</NavLink>
                   </li>
                   <li>
-                    <NavLink to="services">services</NavLink>
+                    <NavLink to="/services">services</NavLink>
                   </li>
                   <li>
-                    <NavLink to="partner">partner</NavLink>
+                    <NavLink to="/partner">partner</NavLink>
                   </li>
                 </ul>
               </div>
