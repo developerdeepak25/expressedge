@@ -7,7 +7,7 @@ const ScrollToTop = () => {
   
 
   useEffect(() => {
-    console.log('i am here');
+    // console.log('i am here');
    
     // lenis?.scrollTo(0);
       document.documentElement.scrollTop = 0;

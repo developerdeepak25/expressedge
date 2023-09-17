@@ -9,7 +9,7 @@ const styles = {
   fontSize: "3rem",
   color: "#6941F3",
 };
-const ServiceDiv = ({ data, includeList }) => {
+const ServiceDiv = ({ data }) => {
   const { ref, isInView } = useInViewOnce();
 
   return (
@@ -22,10 +22,7 @@ const ServiceDiv = ({ data, includeList }) => {
       <div className="service-description">
         <h1 className="heading">
           {data.h.map((headingobj) => {
-            console.log(
-              "🚀 ~ file: ServiceDiv.js:25 ~ {data.h.map ~ headingobj:",
-              headingobj
-            );
+           
             return (
               <MotionHeading
                 className={headingobj.violet ? "violet-span" : ""}

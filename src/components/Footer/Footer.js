@@ -30,9 +30,9 @@ const Footer = () => {
           </div>
           <div className="footer-row1-col2 footer-col">
             <NavLink to="/">home</NavLink>
-            <NavLink to="about">about</NavLink>
-            <NavLink to="services">services</NavLink>
-            <NavLink to="partner">partner</NavLink>
+            <NavLink to="/about">about</NavLink>
+            <NavLink to="/services">services</NavLink>
+            <NavLink to="/partner">partner</NavLink>
           </div>
         </div>
         {/*row 2  */}

@@ -36,7 +36,7 @@ const MotionHeading = ({ children, className, isInView }) => {
     if (isInView) {
       controls.start("animate");
 
-      console.log("here i come");
+      // console.log("here i come");
     }
   }, [isInView, controls]);
   return (
@@ -52,15 +52,19 @@ const MotionHeading = ({ children, className, isInView }) => {
         overflow: "hidden",
       }}
     >
-      {[...children].map((letter) => {
+      {[...children].map((letter ,i) => {
         if (letter === " ") {
           return (
-            <motion.span variants={letterAnime} style={{ width: ".2em" }}>
+            <motion.span key={i} variants={letterAnime} style={{ width: ".2em" }}>
               {letter}
             </motion.span>
           );
         }
-        return <motion.span variants={letterAnime}>{letter}</motion.span>;
+        return (
+          <motion.span key={i} variants={letterAnime}>
+            {letter}
+          </motion.span>
+        );
       })}
     </motion.div>
   );

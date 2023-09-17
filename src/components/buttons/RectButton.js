@@ -20,7 +20,7 @@ const RectButton = ({ dest, placeholder, varient }) => {
     }
   }, [roundArrow, varient]);
   return (
-    <NavLink className="btn-link" to={`/${dest}`}>
+    <NavLink className="btn-link" to={dest}>
       <button className={`${varient} btn`}>{placeholder} </button>
       {/* {roundArrow ? <SvgIcon /> : ""} */}
       {roundArrow ? (

@@ -47,7 +47,7 @@ const PartnerSection = () => {
 
           <MotionPara isInView={isInView}>
             <RectButton
-              dest="partner"
+              dest="/partner"
               placeholder="talk To Us"
               varient="secondary"
             />

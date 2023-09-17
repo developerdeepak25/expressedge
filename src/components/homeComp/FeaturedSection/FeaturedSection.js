@@ -58,7 +58,7 @@ const FeaturedSection = () => {
         </MotionPara>
         <MotionPara isInView={isInView}>
           <RectButton
-            dest="services"
+            dest="/services"
             placeholder="view all"
             varient="secondary"
           />

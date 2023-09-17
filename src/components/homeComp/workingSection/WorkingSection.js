@@ -49,7 +49,7 @@ const WorkingSection = () => {
         </MotionPara>
         <MotionPara isInView={isInView}>
           <RectButton
-            dest="about"
+            dest="/about"
             placeholder="know more"
             varient="secondary"
           />

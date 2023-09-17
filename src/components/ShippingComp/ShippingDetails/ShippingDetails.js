@@ -51,7 +51,7 @@ const ShippingDetails = () => {
         </div>
         {/* <hr /> */}
         <div className="submit-btn">
-          <RectButton dest="/" placeholder={"submit"} varient={"secondary"} />
+          <RectButton dest="/" placeholder="submit" varient="secondary" />
         </div>
       </div>
     </div>

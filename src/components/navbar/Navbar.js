@@ -26,7 +26,7 @@ const Navbar = ({ hiddenNav, ease }) => {
 
     if (location.pathname !== "/") {
       setIntialDelay(true)
-      console.log(`initialDelay`, intialDelay);
+      // console.log(`initialDelay`, intialDelay);
     }
 
     const delay = setTimeout(() => {
@@ -49,6 +49,7 @@ const Navbar = ({ hiddenNav, ease }) => {
       y: "-100%",
     },
   };
+  // console.log(`process.env.PUBLIC_URL`, process.env.PUBLIC_URL);
   return (
     <>
       {intialDelay && (
@@ -70,16 +71,16 @@ const Navbar = ({ hiddenNav, ease }) => {
               <div className="nav-links">
                 <ul>
                   <li>
-                    <NavLink to="/">home</NavLink>
+                    <NavLink to='/'>home</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/about">about</NavLink>
+                    <NavLink to='/about'>about</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/services">services</NavLink>
+                    <NavLink to='/services'>services</NavLink>
                   </li>
                   <li>
-                    <NavLink to="/partner">partner</NavLink>
+                    <NavLink to='/partner'>partner</NavLink>
                   </li>
                 </ul>
               </div>
@@ -87,7 +88,7 @@ const Navbar = ({ hiddenNav, ease }) => {
               {/* navbar button */}
               <RectButton
                 varient="primary"
-                dest="shipping"
+                dest="/shipping"
                 placeholder="ship package"
               />
             </div>

@@ -10,7 +10,7 @@ const AboutSec = () => {
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   useEffect(() => {
-    console.log(`isInView`, isInView);
+    // console.log(`isInView`, isInView);
   }, [isInView]);
   return (
     <motion.div className="about-section f-y-center">
@@ -36,7 +36,7 @@ const AboutSec = () => {
         </MotionPara>
         <MotionPara isInView={isInView}>
           <RectButton
-            dest="about"
+            dest="/about"
             placeholder="know more"
             varient="secondary"
           ></RectButton>
