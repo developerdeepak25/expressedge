@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/expressedge/static/css/main.a9a79750.css",
-    "main.js": "/expressedge/static/js/main.44a0bd84.js",
+    "main.css": "/expressedge/static/css/main.e7a726e1.css",
+    "main.js": "/expressedge/static/js/main.22bd69d5.js",
     "static/js/787.28cb0dcd.chunk.js": "/expressedge/static/js/787.28cb0dcd.chunk.js",
     "static/media/transition-img.png": "/expressedge/static/media/transition-img.6f62e26e7c8cc80c84b2.png",
     "static/media/sticky-img.png": "/expressedge/static/media/sticky-img.8311244febc5b209dcac.png",
@@ -13,12 +13,12 @@
     "static/media/ravi.png": "/expressedge/static/media/ravi.0d6579e50d45cb674244.png",
     "static/media/sohan.png": "/expressedge/static/media/sohan.9ff5795af49f82eaaac7.png",
     "index.html": "/expressedge/index.html",
-    "main.a9a79750.css.map": "/expressedge/static/css/main.a9a79750.css.map",
-    "main.44a0bd84.js.map": "/expressedge/static/js/main.44a0bd84.js.map",
+    "main.e7a726e1.css.map": "/expressedge/static/css/main.e7a726e1.css.map",
+    "main.22bd69d5.js.map": "/expressedge/static/js/main.22bd69d5.js.map",
     "787.28cb0dcd.chunk.js.map": "/expressedge/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9a79750.css",
-    "static/js/main.44a0bd84.js"
+    "static/css/main.e7a726e1.css",
+    "static/js/main.22bd69d5.js"
   ]
 }
