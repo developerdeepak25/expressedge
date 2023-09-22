@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="footer-row1-col1 footer-col">
             <div className="col1-row1">
               <h3>SAY HELLO !!</h3>
-              <a href="#home">expressedge24@gmail.com</a>
+              <a href="mailto:developer.deepak25@gmail.com">expressedge24@gmail.com</a>
             </div>
             <ul className="col1-row2">
               <li>

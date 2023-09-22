@@ -10,7 +10,7 @@ import {
 import "./TimelineSection.scss";
 import useInViewOnce from "customhooks/useInViewOnce";
 import MotionHeading from "components/MotionHeading";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 
 const TimelineSection = () => {
   const { ref, isInView } = useInViewOnce();
@@ -56,10 +56,10 @@ const TimeLine = () => {
   ];
 
   return (
-    <MotionPara isInView={isInView}>
+    <MotionElement isInView={isInView} delay={0}>
       <div className="timeline" ref={ref}>
         <Timeline position="alternate-reverse">
-        {/* mapping each timeline item or card or box */}
+          {/* mapping each timeline item or card or box */}
           {data.map((item, index) => (
             <TimelineItem key={index}>
               <TimelineSeparator>
@@ -74,7 +74,7 @@ const TimeLine = () => {
           ))}
         </Timeline>
       </div>
-    </MotionPara>
+    </MotionElement>
   );
 };
 
@@ -83,12 +83,12 @@ const TimeLineBox = ({ itemData }) => {
   const { h, p, className } = itemData;
 
   return (
-    <MotionPara isInView={isInView}>
+    <MotionElement isInView={isInView} delay={0}>
       <div className={`tl-content-box ${className}`} ref={ref}>
         <div className="tl-box-h">{h}</div>
         <p className="tl-box-p para">{p}</p>
       </div>
-    </MotionPara>
+    </MotionElement>
   );
 };
 

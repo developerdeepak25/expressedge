@@ -6,7 +6,7 @@ import branchSrc from "assets/icons/branch.png";
 import employeeSrc from "assets/icons/employee.png";
 import boxSrc from "assets/icons/box.png";
 import warehouseSrc from "assets/icons/warehouse.png";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 import useInViewOnce from "customhooks/useInViewOnce";
 
 const assetsData = [
@@ -58,13 +58,13 @@ const Asset = ({ data }) => {
   const { ref, isInView } = useInViewOnce();
 
   return (
-    <MotionPara isInView={isInView}>
+    <MotionElement isInView={isInView} delay={0.1}>
       <div className="asset" ref={ref}>
         <img src={data.src} alt={data.alt} />
         <div className="asset-quantity">{data.quantity}</div>
-        <p className="para assets-description">{data.description}</p>
+        <p className="para asset-description">{data.description}</p>
       </div>
-    </MotionPara>
+    </MotionElement>
   );
 };
 

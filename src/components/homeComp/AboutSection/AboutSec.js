@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./AboutSec.scss";
 import MotionHeading from "components/MotionHeading";
 import { useInView, motion } from "framer-motion";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 import RectButton from "components/buttons/RectButton";
 
 const AboutSec = () => {
@@ -17,11 +17,13 @@ const AboutSec = () => {
       <div className="about-content" ref={ref}>
         <h1 className="heading">
           <MotionHeading isInView={isInView}>Learn more </MotionHeading>
-          <MotionHeading className="violet-span" isInView={isInView}>About Us </MotionHeading>
+          <MotionHeading className="violet-span" isInView={isInView}>
+            About Us{" "}
+          </MotionHeading>
           <MotionHeading isInView={isInView}>and our company.</MotionHeading>
         </h1>
-        <MotionPara isInView={isInView}>
-          <div className="para">  
+        <MotionElement isInView={isInView}>
+          <div className="para">
             <p>
               Lorem ipsum dolor sit amet consectetur. Suspendisse a platea nulla
               vel nec fringilla tellus tincidunt porttitor. Sed cum urna magna
@@ -33,14 +35,14 @@ const AboutSec = () => {
               vel.
             </p>
           </div>
-        </MotionPara>
-        <MotionPara isInView={isInView}>
+        </MotionElement>
+        <MotionElement isInView={isInView}>
           <RectButton
             dest="/about"
             placeholder="know more"
             varient="secondary"
           ></RectButton>
-        </MotionPara>
+        </MotionElement>
       </div>
     </motion.div>
   );

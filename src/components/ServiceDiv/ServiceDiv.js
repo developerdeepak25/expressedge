@@ -1,6 +1,6 @@
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 import useInViewOnce from "customhooks/useInViewOnce";
-import MotionPara from "../MotionPara";
+import MotionElement from "../MotionElement";
 import MotionHeading from "../MotionHeading";
 import RectButton from "../buttons/RectButton";
 import "./ServiceDiv.scss";
@@ -15,14 +15,13 @@ const ServiceDiv = ({ data }) => {
   return (
     <div className="service-div" ref={ref}>
       <div className={`service-img  ${data.order}`}>
-        <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <img src={data.src} alt="img" />
-        </MotionPara>
+        </MotionElement>
       </div>
       <div className="service-description">
         <h1 className="heading">
           {data.h.map((headingobj) => {
-           
             return (
               <MotionHeading
                 className={headingobj.violet ? "violet-span" : ""}
@@ -37,36 +36,36 @@ const ServiceDiv = ({ data }) => {
           </MotionHeading> */}
           {/* <MotionHeading isInView={isInView}>{data.hPart2}</MotionHeading> */}
         </h1>
-        <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <div className="para">
             <p>{data.p}</p>
           </div>
-        </MotionPara>
+        </MotionElement>
 
         {data.serviceList &&
           data.serviceList.map((item) => {
             return (
               <div className="service-list">
-                <MotionPara isInView={isInView}>
+                <MotionElement isInView={isInView}>
                   <div className="service-item">
                     <span>
                       <CheckCircleOutlineRoundedIcon style={styles} />
                     </span>
                     <p>{item}</p>
                   </div>
-                </MotionPara>
+                </MotionElement>
               </div>
             );
           })}
         {data.button && (
           <>
-            <MotionPara isInView={isInView}>
+            <MotionElement isInView={isInView}>
               <RectButton
                 placeholder={data.button.placeholder}
                 dest={data.button.action}
                 varient={data.button.varient}
               />
-            </MotionPara>
+            </MotionElement>
           </>
         )}
       </div>

@@ -3,7 +3,7 @@ import "./StorySection.scss";
 import MotionHeading from "components/MotionHeading";
 import src from "assets/images/grp-img.png";
 import ImageWrapper from "components/ImageWrapper/ImageWrapper";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 
 const StorySection = () => {
   const { ref, isInView } = useInViewOnce();
@@ -12,11 +12,11 @@ const StorySection = () => {
     <div className="story-container">
       <div className="story-content" ref={ref}>
         <div className="grp-img-wrapper">
-          <MotionPara isInView={isInView}>
+          <MotionElement isInView={isInView}>
             <div className="grp-img">
               <ImageWrapper src={src} />
             </div>
-          </MotionPara>
+          </MotionElement>
         </div>
         <div className="story">
           <h1 className="heading">
@@ -27,7 +27,7 @@ const StorySection = () => {
             <MotionHeading isInView={isInView}>inspired us.</MotionHeading>
           </h1>
           <div className="para">
-            <MotionPara isInView={isInView}>
+            <MotionElement isInView={isInView}>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Suspendisse a platea
                 nulla vel nec fringilla tellus tincidunt porttitor. Sed cum urna
@@ -35,8 +35,8 @@ const StorySection = () => {
                 Suspendisse a platea nulla vel nec fringilla tellus tincidunt
                 porttitor. Sed cum urna magna vel. this that
               </p>
-            </MotionPara>
-            <MotionPara isInView={isInView}>
+            </MotionElement>
+            <MotionElement isInView={isInView}>
               <p>
                 Lorem ipsum dolor sit amet consectetur. Suspendisse a platea
                 nulla vel nec fringilla tellus tincidunt porttitor. Sed cum urna
@@ -44,7 +44,7 @@ const StorySection = () => {
                 platea nulla vel nec fringilla tellus tincidunt porttitor. Sed
                 cum urna magna vel.
               </p>
-            </MotionPara>
+            </MotionElement>
           </div>
         </div>
       </div>

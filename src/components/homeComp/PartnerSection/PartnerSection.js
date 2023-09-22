@@ -5,7 +5,7 @@ import ImageWrapper from "components/ImageWrapper/ImageWrapper";
 import src from "assets/images/hand-shake.png";
 import { useInView } from "framer-motion";
 import MotionHeading from "components/MotionHeading";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 
 const PartnerSection = () => {
   const ref = useRef(null);
@@ -15,16 +15,16 @@ const PartnerSection = () => {
   return (
     <div className="partner-section" ref={ref}>
       <div className="partner-container">
-      <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <div className="deco-line"></div>
-        </MotionPara>
+        </MotionElement>
         <div className="partner-content">
           <h1 className="heading">
             <MotionHeading isInView={isInView}>
               Our Partner Program
             </MotionHeading>
           </h1>
-          <MotionPara isInView={isInView}>
+          <MotionElement isInView={isInView}>
             <div className="para">
               <p>
                 We operate like any other delivery company, but what sets us
@@ -43,21 +43,21 @@ const PartnerSection = () => {
                 services unparalleled. click to read more.
               </p>
             </div>
-          </MotionPara>
+          </MotionElement>
 
-          <MotionPara isInView={isInView}>
+          <MotionElement isInView={isInView}>
             <RectButton
               dest="/partner"
               placeholder="talk To Us"
               varient="secondary"
             />
-          </MotionPara>
+          </MotionElement>
         </div>
-        <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <div className="partner-img">
             <ImageWrapper src={src} alt="hand-shake" />
           </div>
-        </MotionPara>
+        </MotionElement>
       </div>
     </div>
   );

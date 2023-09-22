@@ -3,7 +3,7 @@ import "./FeaturedSection.scss";
 import CheckCircleOutlineRoundedIcon from "@mui/icons-material/CheckCircleOutlineRounded";
 import MotionHeading from "components/MotionHeading";
 import { useInView } from "framer-motion";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 import RectButton from "components/buttons/RectButton";
 
 const FeaturedSection = () => {
@@ -28,7 +28,7 @@ const FeaturedSection = () => {
           </MotionHeading>
         </h1>
 
-        <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <div className="feature-list">
             <div className="feature-service">
               <span>
@@ -55,14 +55,14 @@ const FeaturedSection = () => {
               <p>Warehouse for each type of parcel</p>
             </div>
           </div>
-        </MotionPara>
-        <MotionPara isInView={isInView}>
+        </MotionElement>
+        <MotionElement isInView={isInView}>
           <RectButton
             dest="/services"
             placeholder="view all"
             varient="secondary"
           />
-        </MotionPara>
+        </MotionElement>
       </div>
     </div>
   );

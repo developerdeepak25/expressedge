@@ -3,7 +3,7 @@ import "./WorkingSection.scss";
 import RectButton from "components/buttons/RectButton";
 import MotionHeading from "components/MotionHeading";
 import { useInView } from "framer-motion";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 
 const WorkingSection = () => {
   const ref = useRef(null);
@@ -20,11 +20,11 @@ const WorkingSection = () => {
           <MotionHeading isInView={isInView}>
             understand our procedures.
           </MotionHeading>
-        <MotionPara isInView={isInView}>
-          <div className="deco-line"></div>
-        </MotionPara>
+          <MotionElement isInView={isInView}>
+            <div className="deco-line"></div>
+          </MotionElement>
         </h1>
-        <MotionPara isInView={isInView}>
+        <MotionElement isInView={isInView}>
           <div className="para">
             <p>
               We operate like any other delivery company, but what sets us apart
@@ -46,14 +46,14 @@ const WorkingSection = () => {
               services unparalleled. click to read more.
             </p>
           </div>
-        </MotionPara>
-        <MotionPara isInView={isInView}>
+        </MotionElement>
+        <MotionElement isInView={isInView}>
           <RectButton
             dest="/about"
             placeholder="know more"
             varient="secondary"
           />
-        </MotionPara>
+        </MotionElement>
       </div>
     </div>
   );

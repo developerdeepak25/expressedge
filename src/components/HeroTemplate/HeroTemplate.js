@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "./HeroTemplate.scss";
 import MotionHeading from "components/MotionHeading";
 import { useInView } from "framer-motion";
-import MotionPara from "components/MotionPara";
+import MotionElement from "components/MotionElement";
 
 const HeroTemplate = ({ content }) => {
   const ref = useRef(null);
@@ -19,14 +19,14 @@ const HeroTemplate = ({ content }) => {
         )}
         <div className="para hero-para">
           {p1 && (
-            <MotionPara isInView={isInView}>
+            <MotionElement isInView={isInView}>
               <p>{p1}</p>
-            </MotionPara>
+            </MotionElement>
           )}
           {p2 && (
-            <MotionPara isInView={isInView}>
+            <MotionElement isInView={isInView}>
               <p>{p2}</p>
-            </MotionPara>
+            </MotionElement>
           )}
         </div>
       </div>
